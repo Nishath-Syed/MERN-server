@@ -1,4 +1,4 @@
-name: Auto Merge Main to Testing
+name: Auto Merge Main to Testing in Client
 
 on:
   push:
@@ -16,9 +16,9 @@ jobs:
             token: ${{secrets.ACTIONS_PAT}}
 
       - name: Configure Git
-        run: 
-          git config --global user.name 'Nishath-Syed'
-          git config --global user.email 'nishathsyed95@gmail.com'
+        run: |
+          git config --global user.name 'Rasha-Syed'
+          git config --global user.email 'rashanishath@gmail.com'
 
       - name: Fetch all branches
         run: git fetch --all
