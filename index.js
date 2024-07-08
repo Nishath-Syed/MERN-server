@@ -1,4 +1,4 @@
-const express = require('express');
+/*const express = require('express');
 const mongoose =require('mongoose');
 const {ApolloServer,gql}=require('apollo-server-express');
 const typeDefs=require('./schema');
@@ -67,7 +67,7 @@ app.post('/users',async(req,res)=>{
     }catch(err){
         res.status(500).send(err);
     }
-})*/
+})
 
 async function StartServer() {
     await server.start();
@@ -75,9 +75,9 @@ async function StartServer() {
     app.listen(port,()=> {
         console.log('Server live');
     })
+}*/
+function add(a,b){
+    return a+b;
 }
-function Testing(){
-    return 1;
-}
-Testing();
-StartServer();
+//StartServer();
+module.exports=add;
