@@ -16,7 +16,8 @@ const resolvers = {
               return user;
             }
             throw new Error('Invalid email or password');
-          }
+          },
+          getAllUsers:async()=>{return await User.find()}
     },
     Mutation:{
         createUser: async (_,{input})=>{
